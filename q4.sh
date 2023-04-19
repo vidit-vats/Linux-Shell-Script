@@ -14,6 +14,5 @@ do
 	echo $res
 	i=`expr $i + 2`
 done
-
-
+ 
 

@@ -6,13 +6,13 @@
 #expr substr $string_var_name start_index length_required
 echo "Enter a string,start index and end index: "
 read str
+echo "Length of String: ${#str}"
 read st
 read ed
 
-len=`expr length $str`
-echo "Length: $len"
-res=`expr substr $str $st $ed` 
-echo "Substring: $res"
 
+
+res="${str:st:ed}"
+echo "Cut String: $res"
 
 
