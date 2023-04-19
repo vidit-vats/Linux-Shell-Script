@@ -1,18 +1,19 @@
 #WAP to find avg, sum and product of 4 int
 echo "Enter 4 numbers: "
-read n1
-read n2
-read n3 
-read n4 
+read n1 n2 n3 n4 
 
 #sum
-sum=`expr $n1 + $n2 + $n3 + $n4`
+sum=$(($n1+$n2+$n3+$n4))
 echo "Sum: $sum"
 
-#product
-prod=`expr $n1 \* $n2 \* $n3 \* $n4`
+prod=$(($n1*$n2*$n3*$n4))
 echo "Product: $prod"
 
-#average
-avg=$(bc <<< "scale=2;$sum/4")
+#12th line shows one way to find average of 4 numbers
+#avg=$(bc <<< "scale=2;$sum/4")
+
+<<comm
+#another way to find the avg of 4 nos
+
+avg=$(echo "scale=2;$sum/4" | bc)
 echo "Average: $avg"
