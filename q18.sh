@@ -10,6 +10,7 @@ total_res=("$res")
 echo "Total Result: ${res[@]}"
 echo "Length of total_res: ${#res[@]}"
 
+count=${#res[@]}
 
 countpat=$(($count - ($count - 1)-1))
 final_word=${res[$countpat]}
