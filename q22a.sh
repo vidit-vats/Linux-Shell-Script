@@ -14,4 +14,4 @@ then
         bill=$(( 300+(($units-200)*3) ))
 fi
 
-echo "Bill: $bill"
+echo "Bill: Rs. $bill"
