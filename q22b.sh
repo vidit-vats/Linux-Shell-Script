@@ -15,4 +15,4 @@ then
         bill=$( echo "scale=3;300+(($units-200)*3)" | bc)
 fi
 
-echo "Bill: $bill"
+echo "Bill: Rs. $bill"
