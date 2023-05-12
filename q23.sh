@@ -1,4 +1,3 @@
-# for n=3, answer should come as 2.5
 factorial()
 {
  i=1
@@ -29,5 +28,4 @@ do
 	#echo "Final Result: $fin_res"
 done
 
-echo
 echo "Sum of the desired series: $fin_res"
